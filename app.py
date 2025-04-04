@@ -1,6 +1,10 @@
 import gradio as gr
 import random
 from smolagents import GradioUI, CodeAgent, HfApiModel
+from dotenv import load_dotenv
+
+# Load environment variables from .env file
+load_dotenv()
 
 # Import our custom tools from their modules
 from tools import DuckDuckGoSearchTool, WeatherInfoTool, HubStatsTool
